@@ -17,8 +17,8 @@ function App() {
         {/* Список виджетов */}
         { widgets.length > 0 && (
             widgets.map(({ id, type, count }) => type === 'counter' 
-              ? <Counter id={ id } count={ count } key={ id.toString() + "_1" } data-testid={ id.toString() + "_counter" }/> 
-              : <Timer id={ id } count={ count } key={ id.toString() + "_2" } data-testid={ id.toString() + "_timer" }/>
+              ? <Counter id={ id } count={ count } key={ id.toString() + "_1" }/> 
+              : <Timer id={ id } count={ count } key={ id.toString() + "_2" }/>
             )
           )
         }
